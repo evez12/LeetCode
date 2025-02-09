@@ -1,4 +1,4 @@
-package com.huseynov;
+package com.huseynov.easy;
 
 public class Climbing_Stairs_70 {
     public static void main(String[] args) {

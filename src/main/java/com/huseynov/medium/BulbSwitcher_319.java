@@ -1,4 +1,4 @@
-package com.huseynov;
+package com.huseynov.medium;
 
 public class BulbSwitcher_319 {
     public static void main(String[] args) {
