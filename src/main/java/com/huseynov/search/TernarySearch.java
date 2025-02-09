@@ -6,10 +6,7 @@ public class TernarySearch {
     public static void main(String[] args) {
         int[] array = {2, 3, 1, 5, 0, 1, 1};
         Arrays.sort(array);
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
-        System.out.println("\n");
+        // test case
         ternarySearch(array, 10);
         ternarySearch(array, 1);
         ternarySearch(array, 0);
@@ -17,7 +14,12 @@ public class TernarySearch {
         ternarySearch(array, 5);
 
     }
-
+    /**
+     * Performs a ternary search on a sorted array to find the target element.
+     *
+     * @param array the sorted array in which to search for the target
+     * @param target the element to search for in the array
+     */
     public static void ternarySearch(int[] array, int target) {
         int left = 0, right = array.length - 1, mid1 = 0, mid2 = 0;
         boolean isFound = false;

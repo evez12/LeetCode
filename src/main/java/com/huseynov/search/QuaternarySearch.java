@@ -6,10 +6,7 @@ public class QuaternarySearch {
     public static void main(String[] args) {
         int[] array = {2, 3, 1, 5, 0, 1, 1};
         Arrays.sort(array);
-        for (int i : array) {
-            System.out.print(i + " ");
-        }
-        System.out.println("\n");
+        // test case
         quaternarySearch(array, 10);
         quaternarySearch(array, 1);
         quaternarySearch(array, 0);
@@ -18,6 +15,13 @@ public class QuaternarySearch {
 
     }
 
+
+    /**
+     * Performs a quaternary search on a sorted array to find the target element.
+     *
+     * @param array  the sorted array to search
+     * @param target the element to search for
+     */
     public static void quaternarySearch(int[] array, int target) {
         int left = 0, right = array.length - 1, mid1 = 0, mid2 = 0, mid3 = 0;
         boolean isFound = false;
