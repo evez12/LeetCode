@@ -1,4 +1,4 @@
-package com.huseynov;
+package com.huseynov.easy;
 
 public class Fibonacci_509 {
     public static void main(String[] args) {
