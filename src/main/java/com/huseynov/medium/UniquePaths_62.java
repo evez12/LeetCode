@@ -1,9 +1,9 @@
-package com.huseynov;
+package com.huseynov.medium;
 
 public class UniquePaths_62 {
     public static void main(String[] args) {
         System.out.println(uniquePaths(4, 4));
-        System.out.println(uniquePaths(3, 7));
+        System.out.println(uniquePaths(3, 7 ));
     }
 
 
@@ -15,6 +15,7 @@ public class UniquePaths_62 {
         for (int i = 0; i < n; i++) {
             array[i][0] = 1;
         }
+
         for (int j = 0; j < m; j++) {
             array[n - 1][j] = 1;
         }
