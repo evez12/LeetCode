@@ -14,13 +14,12 @@ public class SquaresOfSortedArray_977 {
 
         int left = 0, right = numbers.length - 1;
         while (left <= right) {
-            int leftSquare = numbers[left] * numbers[left];
-            int rightSquare = numbers[right] * numbers[right];
-            if (leftSquare > rightSquare) {
-                result[index] = leftSquare;
+
+            if (Math.abs(numbers[left]) > Math.abs(numbers[right])) {
+                result[index] = numbers[left] * numbers[left];
                 left++;
             } else {
-                result[index] = rightSquare;
+                result[index] = numbers[right] * numbers[right];
                 right--;
             }
             index--;
