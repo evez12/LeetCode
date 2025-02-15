@@ -17,46 +17,19 @@ public class SearchInsertPosition_35 {
     }
 
     public static int searchInsert(int[] nums, int target) {
-        int left = 0, right = nums.length - 1, mid = 0;
+        int left = 0, right = nums.length - 1;
 
         while (left <= right) {
-            mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2;
             if (nums[mid] == target) {
                 return mid;
             }
-
-            if (right - left <= 1) {
-                if (nums[right] >= target && nums[left] <= target ) {
-                    return left + 1;
-                }
-                else if(nums[right] >= target && nums[left] > target ){
-                    return left;
-                }
-                return right + 1;
-            }
-
             if (nums[mid] < target) {
                 left = mid + 1;
-            } else
+            } else {
                 right = mid - 1;
+            }
         }
-        return -1;
+        return left;
     }
-    /*
-    while (left <= right) {
-    mid = left + (right - left) / 2;
-    if (nums[mid] == target) {
-        return mid;
-    }
-    if (nums[mid] < target) {
-        left = mid + 1;
-    } else {
-        right = mid - 1;
-    }
-}
-if (nums[left] >= target) {
-    return left;
-}
-return left + 1;
-    * */
 }
