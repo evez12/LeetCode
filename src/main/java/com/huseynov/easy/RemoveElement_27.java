@@ -1,8 +1,5 @@
 package com.huseynov.easy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RemoveElement_27 {
     public static void main(String[] args) {
         int[] nums = {3, 2, 2, 3};
@@ -40,15 +37,12 @@ public class RemoveElement_27 {
         for (int i = 0; i < size; i++) {
 
             if (value == nums[i]) {
-                int temp = nums[i];
                 nums[i] = nums[lastIndex];
-                nums[lastIndex] = temp;
                 nums[lastIndex] = -1;
                 lastIndex--;
                 i--;
             }
         }
-
         return lastIndex + 1;
     }
 }
