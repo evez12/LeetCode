@@ -2,7 +2,7 @@ package com.huseynov.easy;
 
 import java.util.HashMap;
 
-public class IsomorphicStrings_205_coming {
+public class IsomorphicStrings_205 {
     public static void main(String[] args) {
         // a=1,b=2,c=3,d=4,e=5,f=6,g=7,h=8
         System.out.println(isIsomorphic("egg", "add")); // diff = 4
