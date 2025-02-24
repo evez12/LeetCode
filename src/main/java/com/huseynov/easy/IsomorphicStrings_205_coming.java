@@ -11,6 +11,14 @@ public class IsomorphicStrings_205_coming {
         System.out.println(isIsomorphic("badc", "baba")); //
     }
 
+   /**
+     * Determines if two strings are isomorphic.
+     * Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+     *
+     * @param s the first string
+     * @param t the second string
+     * @return true if the strings are isomorphic, false otherwise
+     */
     public static boolean isIsomorphic(String s, String t) {
         if (s.length() != t.length()) return false;
 
@@ -18,8 +26,8 @@ public class IsomorphicStrings_205_coming {
         HashMap<Character, Character> mapForT = new HashMap<>();
 
         for (int i = 0; i < s.length(); i++) {
-            char charS = s.charAt(i); // o
-            char charT = t.charAt(i); // r
+            char charS = s.charAt(i);
+            char charT = t.charAt(i);
             if (mapForS.containsKey(charS)) {
                 if(mapForS.get(charS) != charT) return false;
             } else if (mapForT.containsKey(charT)) {
