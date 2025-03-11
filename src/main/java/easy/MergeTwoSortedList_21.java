@@ -17,10 +17,15 @@ class ListNode {
     }
 
     public void print() {
-        System.out.print(this.val + " ");
-        if (this.next != null) {
-            this.next.print();
+        ListNode current = this;
+        while (current != null) {
+            System.out.print(current.val);
+            if (current.next != null) {
+                System.out.print(" -> ");
+            }
+            current = current.next;
         }
+        System.out.println();
     }
 }
 
