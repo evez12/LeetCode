@@ -11,6 +11,10 @@ public class LongestConsecutive_128 {
 
         int[] nums2 = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
         System.out.println(longestSequences(nums2));
+
+        int[] nums3 = {-3, -9, -3, 4, -3, -9, -3, -6, 8, -3, 0, 1, 5, -1, -4, 0, -7, 1, 5};
+//        int[] nums3 = {-3, -9, 4, -6, 8, 0, 1, 5, -1, -4, -7};
+        System.out.println(longestSequences(nums3));
     }
 
     public static int longestSequences(int[] nums) {
@@ -35,9 +39,11 @@ public class LongestConsecutive_128 {
                 value++;
             }
             map.remove(nums[i]);
-            count = Math.max(count,eachCount);
+            count = Math.max(count, eachCount);
 
         }
         return count;
     }
+
+
 }
