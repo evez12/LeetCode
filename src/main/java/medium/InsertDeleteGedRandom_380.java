@@ -86,7 +86,7 @@ class RandomizedSet {
         mapKeyValue.remove(val);
         mapKeyIndex.remove(size - 1);
 
-        size--; // Ölçünü azalt
+        size--;
         return true;
     }
 
