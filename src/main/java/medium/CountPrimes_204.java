@@ -18,7 +18,6 @@ public class CountPrimes_204 {
         Arrays.fill(counter, true);
 
         for (int i = 2; i < n; i++) {
-
             if (counter[i]) {
                 setCounter(counter, i);
             }
